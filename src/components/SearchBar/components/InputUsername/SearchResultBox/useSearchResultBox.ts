@@ -30,10 +30,10 @@ export const useSearchResultBox = () => {
   useEffect(() => {
     async function setUpsimarity() {
       if (!isEmpty(username)) {
-        dispatch(setToggleSearchResultAction(false));
         setIsLoadingUserResult(true)
+        dispatch(setToggleSearchResultAction(false));
+        await sleep(1500).catch((error) => console.log(error));
         const similarityUser = searchUser(username);
-        await sleep(2000).catch((error) => console.log(error));
         setListSimilarity(similarityUser);
         setIsLoadingUserResult(false)
       }

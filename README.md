@@ -55,7 +55,8 @@ Sample: useTheme etc.
 
 - Setting up the development environment: https://reactnative.dev/docs/environment-setup.
 - Install dependencies: ( `npm install` or `yarn install`).
-- Run on Android: `npx react-native run-android` 
+- Install CocoaPods dependencies: ( `pod install`).
 - Run on iOS: `npx react-native run-ios` (or `npm run ios`).
+- Run on Android: `npx react-native run-android` 
 - Run on Test: `npm test` (or `npm run test`).
 - ✨ Don't forget to enable eslint ✨
